@@ -1,6 +1,6 @@
-# 🌞 ODS Energy - Sitio Web Profesional
+# ODS Energy Website
 
-Sitio web profesional para **ODS Energy**, empresa líder en energía solar fotovoltaica en Alicante, España.
+Sitio web profesional para ODS Energy, empresa líder en energía solar fotovoltaica en Alicante.
 
 ## 🚀 Características
 
@@ -11,7 +11,7 @@ Sitio web profesional para **ODS Energy**, empresa líder en energía solar foto
 - **Diseño Responsive**: Optimizado para todos los dispositivos
 - **SEO Optimizado**: Meta tags y estructura para máxima visibilidad
 
-## 🌟 Tecnologías
+## 🌟 Stack Tecnológico
 
 - **React 19** con TypeScript
 - **Vite** como build tool
@@ -32,7 +32,7 @@ Sitio web profesional para **ODS Energy**, empresa líder en energía solar foto
 8. **Subvenciones** (`/subvenciones`) - Información de ayudas
 9. **Contacto** (`/contacto`) - Formularios y contacto
 
-## ⚡ Instalación
+## ⚡ Instalación y Desarrollo
 
 ```bash
 # Clonar el repositorio
@@ -47,6 +47,9 @@ npm run dev
 
 # Construir para producción
 npm run build
+
+# Vista previa del build
+npm run preview
 ```
 
 ## 🎯 Servicios Incluidos
@@ -56,8 +59,71 @@ npm run build
 3. **Huerto Solar** - Proyectos comunitarios
 4. **Bombeo Solar** - Desde 2.800€
 5. **Placas Flotantes** - Embalses y lagos
-6. **Agrovoltaica** - Desde 15.000€
-7. **Proyectos Públicos** - EDAR y municipios
+6. **Agrovoltaica** - Desde 8.000€
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── components/          # Componentes reutilizables
+│   ├── ui/             # Componentes de UI base
+│   ├── Header.tsx      # Cabecera de navegación
+│   ├── Footer.tsx      # Pie de página
+│   ├── SolarCalculator.tsx # Calculadora solar
+│   └── WhatsAppWidget.tsx   # Widget de WhatsApp
+├── pages/              # Páginas de la aplicación
+│   ├── Home.tsx        # Página de inicio
+│   ├── Services.tsx    # Lista de servicios
+│   ├── ServiceDetail.tsx # Detalle de servicio
+│   ├── About.tsx       # Sobre nosotros
+│   ├── Contact.tsx     # Contacto
+│   └── ...
+├── lib/                # Utilidades y configuraciones
+│   └── utils.ts        # Funciones auxiliares
+└── App.tsx             # Componente principal
+```
+
+## 🎨 Personalización
+
+### Colores
+El proyecto utiliza una paleta de colores personalizada definida en `tailwind.config.js`:
+- **Naranja**: `#FF6B35` (primary)
+- **Verde**: `#2ECC71` (secondary)
+- **Grises**: Sistema completo para texto y backgrounds
+
+### Componentes
+Todos los componentes están construidos con **Radix UI** para consistencia y accesibilidad.
+
+## 📦 Comandos Disponibles
+
+- `npm run dev` - Servidor de desarrollo
+- `npm run build` - Build de producción
+- `npm run preview` - Vista previa del build
+- `npm run lint` - Linting con ESLint
+- `npm run format` - Formateo con Prettier
+
+## 🚀 Deploy
+
+La aplicación está configurada para deploy en cualquier hosting estático:
+
+```bash
+# Generar build
+npm run build
+
+# La carpeta 'dist' contiene los archivos estáticos
+# Sube el contenido a tu servidor web
+```
+
+### Deploy en Netlify
+1. Conecta el repositorio a Netlify
+2. Configura el comando build: `npm run build`
+3. Configura la carpeta de publish: `dist`
+4. ¡Listo!
+
+### Deploy en Vercel
+1. Importa el repositorio en Vercel
+2. Configura automáticamente
+3. ¡Listo!
 
 ## 📞 Contacto
 
