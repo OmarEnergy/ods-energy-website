@@ -1,141 +1,179 @@
-# ODS Energy Website
+# ODS Energy - Sitio Web Corporativo
 
-Sitio web profesional para ODS Energy, empresa líder en energía solar fotovoltaica en Alicante.
+> **Empresa especializada en energía solar en Alicante**
 
-## 🚀 Características
+[![React](https://img.shields.io/badge/React-19-blue)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5-purple)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-cyan)](https://tailwindcss.com/)
 
-- **Calculadora Solar Interactiva**: Herramienta avanzada para calcular ahorro y ROI
-- **9 Páginas Completas**: Inicio, Servicios, Portfolio, Blog, Contacto y más
-- **7 Tipos de Servicios**: Desde autoconsumo doméstico hasta proyectos industriales
-- **Sistema de Captura de Leads**: Formularios optimizados para conversión
-- **Diseño Responsive**: Optimizado para todos los dispositivos
-- **SEO Optimizado**: Meta tags y estructura para máxima visibilidad
+## 🌟 Descripción
 
-## 🌟 Stack Tecnológico
+Sitio web profesional de ODS Energy, empresa líder en instalaciones solares en Alicante. La web incluye:
 
-- **React 19** con TypeScript
-- **Vite** como build tool
-- **Tailwind CSS 4** para estilos
-- **Radix UI** para componentes
-- **Framer Motion** para animaciones
-- **React Router** para navegación
+- **9 páginas completas** con navegación fluida
+- **Calculadora solar interactiva** integrada
+- **Diseño responsive** para todos los dispositivos
+- **SEO optimizado** para motores de búsqueda
+- **Formularios de contacto** funcionales
+- **Blog educativo** sobre energía solar
 
 ## 📱 Páginas
 
-1. **Inicio** (`/`) - Landing principal
-2. **Servicios** (`/servicios`) - Lista de servicios
-3. **Detalle de Servicio** (`/servicio/:id`) - Páginas específicas
-4. **Nosotros** (`/nosotros`) - Información de la empresa
-5. **Sectores** (`/sectores`) - Sectores de aplicación
-6. **Portfolio** (`/portfolio`) - Proyectos completados
-7. **Blog** (`/blog`) - Artículos educativos
-8. **Subvenciones** (`/subvenciones`) - Información de ayudas
-9. **Contacto** (`/contacto`) - Formularios y contacto
+| Página | Descripción | Estado |
+|--------|-------------|--------|
+| 🏠 **Inicio** | Hero, servicios, calculadora, testimonios | ✅ Completada |
+| 🏢 **Nosotros** | Historia, equipo, valores | ✅ Completada |
+| ⚡ **Servicios** | 7 tipos de instalaciones solares | ✅ Completada |
+| 📋 **Detalle Servicios** | Páginas específicas por servicio | ✅ Completada |
+| 🏭 **Sectores** | Agrícola, EDAR, Hospital, Municipal | ✅ Completada |
+| 💼 **Portfolio** | Proyectos realizados con filtros | ✅ Completada |
+| 📰 **Blog** | Artículos educativos sobre energía solar | ✅ Completada |
+| 💰 **Subvenciones** | Información sobre ayudas 2025 | ✅ Completada |
+| 📞 **Contacto** | Formularios, FAQs, información | ✅ Completada |
 
-## ⚡ Instalación y Desarrollo
+## 🚀 Demo en Vivo
+
+- **Previsualización actual**: [https://t27e1qm32p5k.space.minimax.io](https://t27e1qm32p5k.space.minimax.io) ⚠️ *sin imágenes*
+- **Repositorio GitHub**: [https://github.com/OmarEnergy/ods-energy-website](https://github.com/OmarEnergy/ods-energy-website)
+
+## 🛠️ Tecnologías
+
+- **Frontend**: React 19 + TypeScript
+- **Build Tool**: Vite 5
+- **Styling**: Tailwind CSS 4
+- **Routing**: React Router (Wouter)
+- **UI Components**: Radix UI
+- **Package Manager**: pnpm
+
+## ⚠️ Estado Actual: Imágenes Pendientes
+
+**IMPORTANTE**: Las imágenes están pendientes de subir al repositorio. Ver [IMAGES_STATUS.md](./IMAGES_STATUS.md) para instrucciones completas.
+
+### Imágenes Críticas Faltantes:
+- `public/hero-solar-panels.jpg` - Hero principal
+- `public/hero-home-solar.jpg` - Hero alternativo  
+- `public/team-engineers.jpg` - Página Nosotros
+- `public/sector-agriculture.jpg` - Página Sectores
+- `public/service-autoconsumo-domestico.jpg` - Página Servicios
+
+**Total pendiente**: 95 archivos de imagen
+
+## 📦 Instalación Local
 
 ```bash
-# Clonar el repositorio
+# Clonar repositorio
 git clone https://github.com/OmarEnergy/ods-energy-website.git
+cd ods-energy-website
 
 # Instalar dependencias
-cd ods-energy-website
-npm install
+pnpm install
 
-# Ejecutar en desarrollo
-npm run dev
+# Copiar imágenes (desde el proyecto original)
+# cp -r /ruta/original/client/public/* public/
 
-# Construir para producción
-npm run build
-
-# Vista previa del build
-npm run preview
+# Iniciar servidor de desarrollo
+pnpm dev
 ```
 
-## 🎯 Servicios Incluidos
+La aplicación estará disponible en `http://localhost:5173`
 
-1. **Autoconsumo Doméstico** - Desde 3.500€
-2. **Autoconsumo Industrial** - Desde 50.000€
-3. **Huerto Solar** - Proyectos comunitarios
-4. **Bombeo Solar** - Desde 2.800€
-5. **Placas Flotantes** - Embalses y lagos
-6. **Agrovoltaica** - Desde 8.000€
+## 🔨 Scripts Disponibles
 
-## 📁 Estructura del Proyecto
+```bash
+# Servidor de desarrollo
+pnpm dev
+
+# Build para producción
+pnpm build
+
+# Preview del build
+pnpm preview
+
+# Linting
+pnpm lint
+```
+
+## 📂 Estructura del Proyecto
 
 ```
 src/
 ├── components/          # Componentes reutilizables
-│   ├── ui/             # Componentes de UI base
-│   ├── Header.tsx      # Cabecera de navegación
-│   ├── Footer.tsx      # Pie de página
-│   ├── SolarCalculator.tsx # Calculadora solar
-│   └── WhatsAppWidget.tsx   # Widget de WhatsApp
+│   ├── Header.tsx      # Navegación principal
+│   ├── Footer.tsx      # Footer corporativo
+│   └── SolarCalculator.tsx # Calculadora interactiva
 ├── pages/              # Páginas de la aplicación
 │   ├── Home.tsx        # Página de inicio
+│   ├── About.tsx       # Página nosotros
 │   ├── Services.tsx    # Lista de servicios
-│   ├── ServiceDetail.tsx # Detalle de servicio
-│   ├── About.tsx       # Sobre nosotros
-│   ├── Contact.tsx     # Contacto
+│   ├── Contact.tsx     # Página de contacto
 │   └── ...
 ├── lib/                # Utilidades y configuraciones
-│   └── utils.ts        # Funciones auxiliares
-└── App.tsx             # Componente principal
+├── hooks/              # Custom hooks
+└── App.tsx            # Componente principal con rutas
 ```
-
-## 🎨 Personalización
-
-### Colores
-El proyecto utiliza una paleta de colores personalizada definida en `tailwind.config.js`:
-- **Naranja**: `#FF6B35` (primary)
-- **Verde**: `#2ECC71` (secondary)
-- **Grises**: Sistema completo para texto y backgrounds
-
-### Componentes
-Todos los componentes están construidos con **Radix UI** para consistencia y accesibilidad.
-
-## 📦 Comandos Disponibles
-
-- `npm run dev` - Servidor de desarrollo
-- `npm run build` - Build de producción
-- `npm run preview` - Vista previa del build
-- `npm run lint` - Linting con ESLint
-- `npm run format` - Formateo con Prettier
 
 ## 🚀 Deploy
 
-La aplicación está configurada para deploy en cualquier hosting estático:
+El proyecto está configurado con GitHub Actions para deploy automático a GitHub Pages.
 
-```bash
-# Generar build
-npm run build
+Para activar:
+1. Ve a Settings → Pages del repositorio
+2. Selecciona "GitHub Actions" como fuente
+3. Los cambios en `main` se deployarán automáticamente
 
-# La carpeta 'dist' contiene los archivos estáticos
-# Sube el contenido a tu servidor web
-```
+## 🔧 Características Destacadas
 
-### Deploy en Netlify
-1. Conecta el repositorio a Netlify
-2. Configura el comando build: `npm run build`
-3. Configura la carpeta de publish: `dist`
-4. ¡Listo!
+### ✅ Completamente Funcional
+- Calculadora solar con 3 tipos de instalación
+- Sistema de navegación multi-página
+- Formularios de contacto validados
+- Responsive design para móviles y tablets
+- SEO optimizado con meta tags
+- Widget de WhatsApp integrado
 
-### Deploy en Vercel
-1. Importa el repositorio en Vercel
-2. Configura automáticamente
-3. ¡Listo!
+### 🎨 Diseño Profesional
+- Colores corporativos ODS Energy
+- Tipografía moderna y legible
+- Animaciones suaves con Tailwind CSS
+- Componentes accesibles con Radix UI
+- Optimización de imágenes con WebP
+
+### 📊 SEO y Rendimiento
+- Estructura semántica HTML5
+- Meta tags optimizados para buscadores
+- Sitemap.xml y robots.txt
+- Lazy loading de imágenes
+- Compresión de assets
+
+## 📋 To-Do List
+
+- [ ] ✅ Código React subido a GitHub
+- [ ] ✅ Configuración y dependencias
+- [ ] ✅ GitHub Actions para deploy
+- [ ] ❌ **Subir imágenes (95 archivos pendientes)**
+- [ ] 🔄 Activar GitHub Pages
+- [ ] 🔄 Configurar dominio personalizado
+- [ ] 🔄 Backend para formularios
+
+## 👥 Equipo de Desarrollo
+
+- **Desarrollo**: Sistema automatizado MiniMax Agent
+- **Cliente**: ODS Energy (omar.prieto@odsenergy.es)
+- **Tecnologías**: React + TypeScript + Tailwind CSS
+
+## 📄 Documentación Adicional
+
+- [Estado de las Imágenes](./IMAGES_STATUS.md) - Lista completa de imágenes pendientes
+- [Guía de Instalación Detallada](./docs/installation-guide.md) - Instrucciones paso a paso
+- [Configuración de Deploy](./docs/deployment.md) - Configuración de GitHub Pages
 
 ## 📞 Contacto
 
-- **Teléfono**: +34 900 000 000
-- **Email**: info@odsenergy.es
-- **Ubicación**: Alicante, España
-- **Horario**: L-V 9:00-18:00, S 9:00-14:00
-
-## 📄 Licencia
-
-MIT License - ver [LICENSE](LICENSE) para detalles.
+**ODS Energy**  
+📧 omar.prieto@odsenergy.es  
+🌐 [Sitio web](https://odsenergy.es)
 
 ---
 
-**ODS Energy** - Tu futuro energético sostenible 🌱
+*Sitio web desarrollado con React 19 + TypeScript + Tailwind CSS*
